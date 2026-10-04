@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets / local config
+.env
+*.key
+*.pem
+
+# Data, model weights and run artefacts (download or regenerate; do not commit)
+chroma_db/
+outputs/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.zip
+data/*
+!data/.gitkeep
+
+# Media (keep the repo light; link demos instead)
+*.mp4
+*.mkv
+*.mov
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

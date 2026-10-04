@@ -1,0 +1,14 @@
+numpy>=1.24
+pandas>=2.0
+requests>=2.31
+chromadb>=0.5
+sentence-transformers>=2.7
+matplotlib>=3.7
+seaborn>=0.13
+# Optional: LLM-judged metrics (python run_pipeline.py --deepeval)
+# deepeval>=1.0
+# Optional: FAISS retriever / HuggingFace generator fallback
+# faiss-cpu
+# transformers
+# torch
+pytest>=8.0
