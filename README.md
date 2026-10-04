@@ -43,7 +43,7 @@ pip install -r requirements.txt
 python run_pipeline.py --generator mock        # offline, no LLM needed
 ollama pull mistral && python run_pipeline.py  # with the local Mistral model
 python src/build_large_kb.py && python run_pipeline.py --kb large
-pytest -q                                      # offline smoke tests
+pytest -q                                      # offline smoke tests (also run in CI)
 ```
 
 Outputs go to `outputs/` (git-ignored) so the committed `results/` stay intact.
@@ -54,6 +54,7 @@ Outputs go to `outputs/` (git-ignored) so the committed `results/` stay intact.
 src/            knowledge_base.py, retrieval.py, generation.py, evaluation.py, build_large_kb.py
 run_pipeline.py end-to-end runner
 tests/          offline smoke tests (hashing embedder + mock generator)
+.github/        CI workflow
 results/        evaluation CSV/JSON and figures from the benchmark run
 ```
 
