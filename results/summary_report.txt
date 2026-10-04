@@ -1,0 +1,13 @@
+RAG Cybersecurity — Evaluation Summary
+==================================================
+
+Research Questions addressed:
+  RQ1: Context relevance — see eval_results.csv
+  RQ2: Faithfulness — see eval_results.csv
+  RQ3: Worst-case analysis — see all_eval_results.json
+
+Metric Summary:
+  context_relevance: mean=0.1269 std=0.0414 min=0.0451 max=0.1884
+  answer_relevance: mean=0.1694 std=0.0427 min=0.0786 max=0.2335
+  faithfulness: mean=0.5121 std=0.1142 min=0.3000 max=0.6667
+  composite: mean=0.2695 std=0.0479 min=0.1654 max=0.3353
